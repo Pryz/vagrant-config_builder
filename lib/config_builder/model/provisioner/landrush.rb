@@ -15,12 +15,6 @@ class ConfigBuilder::Model::Provisioner::Landrush < ConfigBuilder::Model::Base
         LANDRUSH_ATTRIBUTES.each do |key|
           config.send("#{key}=", attr(key)) if attr(key)
         end
-        #with_attr(:hosts)              { |val| landrush_config.hosts = val }
-        #with_attr(:enabled)            { |val| landrush_config.enabled = val }
-        #with_attr(:tld)                { |val| landrush_config.tld = val }
-        #with_attr(:upstream_servers)   { |val| landrush_config.upstream_servers = val }
-        #with_attr(:host_ip_address)    { |val| landrush_config.host_ip_address = val }
-        #with_attr(:guest_redirect_dns) { |val| landrush_config.guest_redirect_dns = val }
       end
     end
   end
