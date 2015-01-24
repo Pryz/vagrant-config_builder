@@ -63,6 +63,7 @@ module ConfigBuilder
       require 'config_builder/model/provisioner/shell'
       require 'config_builder/model/provisioner/puppet'
       require 'config_builder/model/provisioner/puppet_server'
+      require 'config_builder/model/provisioner/landrush'
     end
   end
 end
